@@ -1,0 +1,19 @@
+%{
+
+%}
+
+%token A B
+
+%%
+
+S : term1 term2 
+  ;
+  
+term1 : A term1
+      | A
+      ;
+term2 : B term2
+	 |
+	 ;
+
+%%
